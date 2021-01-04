@@ -1,0 +1,218 @@
+﻿/*propriedades para toda a página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body{
+    height: 100%;
+}
+
+/*importação da fonte no local*/
+@font-face {
+    src: url('../_fonts/OpenSans-Light.ttf');
+    font-family: "Open Sans";
+}
+
+/*propriedades da classe center*/
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    padding:0 2%;
+}
+
+/*propriedades do header*/
+header{
+    min-width: 1200px;
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+}
+
+header img{
+    margin: 15px;
+}
+
+/*proprieade do container banner*/
+.container-banner{                      /* conatainer com o banner */
+    min-width:1200px;
+    width: 100%;
+    height: 557px;
+    background-image: url('../_images/header_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center{            /* setando a altura do container para que o form erde a configuração */
+    height: 100%;
+}
+
+/*propriedade do container list localizada dentro do container banner*/
+.container-list{
+    padding:30px;
+    margin-top:100px;
+    float:left;
+    width:519px;
+    height:270px;
+    background-color:rgba(33,35,67,0.7);
+}
+
+.container-list ul{
+    list-style-position:inside;     /*coloca o marcador da lista dentro do container*/
+}
+
+.container-list ul li{
+    color: white;
+    margin-top:18px;
+}
+
+/*propriedades do container form dentro do container banner*/
+.form{                           /* container onde vai ficar o form */
+    padding:10px;                /* borda interna */
+    width:400px;
+    height:calc(100% + 30px);    /*função cal vai somar 30px a largura do form que antes disso era do mesmo tamanho do banner */
+    float:right;                 /* alinhando o formulario a direita*/
+    position:relative;           /* essa propriedade permite manipular as propriedades top, botton, left right */
+    top:-15px;                   /* subindo 15px que é a metade de 30px assim fica um pouco pra cima e um pouco para baixo */
+    border-width:12px;
+    border-color:rgba(120,120,120,0.5);
+    border-style:solid;
+    background-color:white;
+    background-clip:padding-box;  /*efeito de transparência a partir do padding*/
+}
+
+.form h2{
+    font-weight: normal;
+    color: #999999;
+    font-size:20px;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container span{
+    display:inline-block;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 17px;
+}
+
+.input-container input{
+    margin-top:8px;
+    width: 344px;
+    height: 55px;
+    border:1px solid #ccc;
+}
+
+.input-container p{
+    display:inline-block;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.input-container-submit{
+    text-align:center;
+}
+
+.input-container input[type=submit]{
+    border-top: 0;
+    border-right:0;
+    border-left:0;
+    border-bottom:5px solid #4a5097;
+    color: white;
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.input-container input[type=submit]:hover{      /*quando o mouse passa por cima a cor muda*/
+    background-color: #323665;
+}
+
+/*propriedades do container do centro 1*/
+.container-center-1{
+    min-width:1200px;
+    padding:40px 0;
+    background-color:#ddd;
+    text-align:center;
+}
+
+.container-center-1 h2{
+    font-weight:normal;
+}
+
+.container-center-1 p{
+    width:698px;
+    margin:15px 0;
+    display:inline-block;
+    text-align:justify;
+}
+
+/*propriedades da flecha que separa o container center 1 do container center 2*/
+.flecha{
+    position: relative;
+    top: 60px;
+    left: 50%; /*para colocar no centro*/
+    margin-left: -20px; /*para colocar no centro*/
+    width: 40px;
+    height: 40px;
+    background-image: url('../_images/arrow.png');
+    background-size: 100% 100%;
+}
+
+/*propriedades do container center 2*/
+.container-center-2{
+    min-width: 1200px;
+    padding:90px 0;
+
+}
+
+.container-center-2 h2{
+    text-align:center;
+    color:#462663;
+    font-weight:normal;
+}
+
+.sub-container-center-2{
+    margin-top:40px;
+    text-align:center;
+}
+
+.container-single{
+    float: left;
+    width: 33.3%;
+    padding:30px;
+}
+
+.container-single img{
+    width:70px;
+}
+
+.container-single p{
+    padding:30px;
+    text-align:justify;
+}
+
+/*propriedades bdo rodapé*/
+footer{
+    clear:both;                     /*limpando os floats anteriores para que o layout se encaixe*/
+    padding:20px 0;
+    border-top:2px solid #888888;
+    color:#888;
+    text-align:center;
+}
+
+footer p{
+    margin-top:8px;
+}
+footer img{
+    width:25px;
+}
